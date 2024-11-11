@@ -1,11 +1,12 @@
 # Temperature Monitoring System with Fan Control
 
 ## Description
-This project reads the temperature using an analog temperature sensor (like the LM35) connected to an Arduino. The temperature is displayed on an LCD screen
+This project monitors the temperature using an analog temperature sensor (like the LM35) connected to an Arduino. The temperature is displayed on an LCD screen, and the system includes basic fan control based on the temperature. If the temperature exceeds a set threshold, the fan will be turned on.
 
 ## Features
 - **Temperature Reading**: Reads the temperature from an analog sensor.
 - **LCD Display**: Displays the current temperature in Celsius on a 16x2 LCD.
+- **Fan Control**: Turns the fan on if the temperature is high.
 
 ## Components
 - **Arduino Board (e.g., Uno, Nano)**
@@ -54,4 +55,3 @@ void loop(){
   delay(1000);
   lcd.clear();
 }
-```
